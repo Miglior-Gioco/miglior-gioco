@@ -8,7 +8,7 @@ $provider = [
 		'bonus'           => '7€ Gratis + 100% di bonus di deposito fino a 200 €',
 		'scale'           => '10.0',
 		'linktext'        => 'Registrati',
-		'link'            => 'https://wpnetopartners.com/__XTPDs3vtA6R2VjBbqtsG2Nd7ZgqdRLk/5/?pg=0&payload=app',
+		'link'            => 'https://wpnetopartners.com/__XTPDs3vtA6WAi_Llmloy2Nd7ZgqdRLk/13/?pg=0&payload=fb',
 		'bookietitle'     => 'WINSPARK',
 	],
 	[
@@ -19,7 +19,7 @@ $provider = [
 		'bonus'           => '€7 Gratuito + fino a € 200 Match Bonus',
 		'scale'           => '9.8',
 		'linktext'        => 'Registrati',
-		'link'            => 'https://record.grnetopartners.com/__XTPDs3vtA5qaf3GfsOPhWNd7ZgqdRLk/1/?pg=0&payload=app',
+		'link'            => 'https://record.grnetopartners.com/__XTPDs3vtA7fylSUNReTkmNd7ZgqdRLk/14/?pg=0&payload=fb',
 		'bookietitle'     => 'GRATORAMA',
 	],
 	[
@@ -30,7 +30,7 @@ $provider = [
 		'bonus'           => '70 Rotazioni gratuite + 100% 1° deposito bonus',
 		'scale'           => '9.6',
 		'linktext'        => 'Registrati',
-		'link'            => 'https://record.wrnetopartners.com/__XTPDs3vtA77HROP8d0ZuGNd7ZgqdRLk/2/?pg=0&payload=app',
+		'link'            => 'https://record.wrnetopartners.com/__XTPDs3vtA4U9L81sNuehWNd7ZgqdRLk/15/?pg=0&payload=fb',
 		'bookietitle'     => 'WINORAMA',
 	],
 	[
@@ -41,7 +41,7 @@ $provider = [
 		'bonus'           => '7€ Gratis + 100% Nuovi bonus giocatori',
 		'scale'           => '9.5',
 		'linktext'        => 'Registrati',
-		'link'            => 'https://record.smnetopartners.com/__XTPDs3vtA4CJW5S8vK60mNd7ZgqdRLk/4/?pg=0&payload=app',
+		'link'            => 'https://record.smnetopartners.com/__XTPDs3vtA5XS91rSMuvHGNd7ZgqdRLk/16/?pg=0&payload=fb',
 		'bookietitle'     => 'SCRATCHMANIA',
 	],
 ];

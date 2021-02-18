@@ -77,7 +77,7 @@ include( 'provider.php' );
                     </div>
                     <div class="offer-cta">
                         <a data-title="<?= $data["bookietitle"]; ?>"
-                           href="provider-<?php echo $providerID; ?>.php<?php echo ! empty( $_SERVER['QUERY_STRING'] ) ? "?" . $_SERVER['QUERY_STRING'] : "" ?>"
+                           href="<?= $data["link"]; ?>"
                            class="btn"
                            style="visibility: visible; opacity: 1; height: auto;">
                             <span><?= $data["linktext"]; ?></span>
