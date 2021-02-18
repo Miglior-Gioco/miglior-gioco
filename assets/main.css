@@ -627,7 +627,8 @@ body {
         right: -12px;
         border-top-width: 13px;
         border-bottom-width: 13px;
-        border-left-width: 12px
+        border-left-width: 12px;
+        top: 0;
     }
 
     #offers .offer-body .offer-logo {
