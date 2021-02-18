@@ -43,7 +43,7 @@ include( 'provider.php' );
 					<?php endif; ?>
                     <div class="offer-logo">
                         <a data-title="<?= $data["bookietitle"]; ?>"
-                           href="provider-<?= $providerID; ?>.php<?php echo ! empty( $_SERVER['QUERY_STRING'] ) ? "?" . $_SERVER['QUERY_STRING'] : "" ?>"
+                           href="<?= $data["link"]; ?>"
                            class="colors-set"
                            style="visibility: visible; opacity: 1;">
                             <img src="<?= $data['image']; ?>" alt="">
@@ -56,7 +56,7 @@ include( 'provider.php' );
                     </div>
                     <div class="offer-bonus">
                         <a data-title="<?= $data["bookietitle"]; ?>"
-                           href="provider-<?php echo $providerID; ?>.php<?php echo ! empty( $_SERVER['QUERY_STRING'] ) ? "?" . $_SERVER['QUERY_STRING'] : "" ?>"
+                           href="<?= $data["link"]; ?>"
                            class="bonus"
                            style="visibility: visible; opacity: 1;">
                             <strong> <?= $data['iconeonetitle']; ?> </strong> <?= $data['iconetwotitle']; ?>
@@ -70,7 +70,7 @@ include( 'provider.php' );
                     </div>
                     <div class="offer-score">
                         <a data-title="<?= $data["bookietitle"]; ?>"
-                           href="provider-<?php echo $providerID; ?>.php<?php echo ! empty( $_SERVER['QUERY_STRING'] ) ? "?" . $_SERVER['QUERY_STRING'] : "" ?>"
+                           href="<?= $data["link"]; ?>"
                            class="score"
                            style="visibility: visible; opacity: 1;">
 							<?= number_format( $score, 1 ); ?> </a>
