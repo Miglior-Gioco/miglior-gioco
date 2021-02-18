@@ -1,0 +1,73 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+img {
+    max-width: 100% !important;
+    height: auto;
+}
+
+.head {
+    padding: 20px;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-content {
+    background: #000 url('../images/bg.jpg') no-repeat fixed center center / cover;
+}
+
+@media (max-width: 768px) {
+    .head {
+        min-height: unset;
+    }
+
+    .head h1 {
+        font-size: 30px;
+    }
+
+    .main-table {
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .head h1 {
+        font-size: 4em;
+    }
+}
+
+.rows.header {
+    background: linear-gradient(180deg, #1107b0, #5aa4c7);
+}
+
+.main-content {
+    background-color: #fff;
+}
+
+.game-img {
+    padding: 0;
+}
+
+.game-img img {
+    object-fit: cover;
+}
+
+.c-info--prov {
+    font-size: 13px;
+}
+
+.quick-links {
+    padding: 20px 0;
+}
+
+.quick-links li {
+    display: inline-block;
+}
+
+.quick-links a {
+    font-size: 20px;
+}
