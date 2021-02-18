@@ -1,2 +1,191 @@
-Hello World
-!!!test
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/fav.png" type="image/png">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <link rel="stylesheet" href="assets/fonts.css" type="text/css">
+    <link rel="stylesheet" href="assets/main.css" type="text/css">
+    <title>MIGLIOR CASINÒ D'ITALIA</title>
+</head>
+<body>
+<div class="main-content" style="padding-bottom: 80px;">
+    <div class="head">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-10 text-center text-white">
+                    <h1 style="font-weight: 700;"><?= encode_to_greek_letters( 'MIGLIOR CASINÒ D\'ITALIA 🇮🇹' ); ?></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="offers">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+<script>
+    const setColor = async (logo) => {
+        const img = logo.querySelector('img');
+        if (!img) {
+            return;
+        }
+
+        // wait for image to load
+        await new Promise(resolve => {
+            if (img.complete) {
+                resolve();
+                return;
+            }
+
+            img.addEventListener('load', function () {
+                resolve();
+            });
+        });
+
+        // get color from first pixel in image
+        const canvas = document.createElement('canvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        canvas.getContext('2d').drawImage(img, 0, 0, img.width, img.height);
+        const color = canvas.getContext('2d').getImageData(100, 100, 100, 100).data;
+
+        // add to link
+        const link = logo.querySelector('a');
+        // link.style.backgroundColor = `rgba(${color.join(',')})`;
+        link.classList.add('colors-set');
+
+        // add to logo-angle
+        link.querySelectorAll('span').forEach(el => {
+            el.style.backgroundColor = `rgba(${color.join(',')})`;
+        });
+    };
+
+    const logos = Array.from(document.querySelectorAll('#offers .offer-logo'));
+    Promise.all(logos.map(setColor))
+        .catch(err => console.error(err));
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <hr style="margin-top: 20px;">
+            <p><img src="images/Canadian-Flag.png" alt="" width="150" height="75"
+                    style="float: left;margin: 0.35em 1.5em 0.35em 0;">I nativi
+                d'Italia giocano d'azzardo da tempo immemorabile. Tuttavia, poiché a quei tempi non esistevano i dadi e
+                le carte, si
+                usavano invece sassolini e bastoncini. A quasi tre decenni dalla sua formazione, il governo italiano ha
+                approvato
+                una legge che vieta il gioco d'azzardo nella sua totalità. Tuttavia, a causa dell'atteggiamento
+                piuttosto indulgente
+                nei confronti del gioco d'azzardo da parte della vicina UE, il governo italiano fu costretto a cedere
+                rispetto al
+                divieto del gioco d'azzardo e nel 1900 furono consentite tombole e lotterie, anche se solo per
+                beneficenza.</p>
+
+            <p>Nel corso degli anni, con il cambiamento di mentalità della gente, il governo ha visto un enorme
+                potenziale e profitto nel permettere alle lotterie statali di finanziare progetti speciali (cosa che
+                vale ancora oggi per alcune lotterie). A poco a poco le province hanno ottenuto l'autorizzazione a
+                gestire lotterie, corse di cavalli e persino casinò. Oggi quasi ogni provincia ha un casinò e i numeri
+                sembrano crescere.</p>
+            <h2>𝐀 𝐜𝐨𝐬𝐚 𝐟𝐚𝐫𝐞 𝐚𝐭𝐭𝐞𝐧𝐳𝐢𝐨𝐧𝐞?</h2>
+            <p>Ci sono un sacco di fattori che fanno di un buon casinò online un casinò online, cioè il bonus senza
+                deposito, il bonus di benvenuto, le offerte speciali, la qualità del software di gioco, l'assistenza
+                clienti, le opzioni di pagamento e di prelievo, l'autorità di licenza, il sito web facile da usare,
+                ecc.</p>
+            <p><strong>La regolamentazione in Italia:</strong> - L'Italia è stata molto rigorosa per quanto riguarda il
+                gioco d'azzardo. Negli anni '70 sono stati introdotti molti cambiamenti che hanno portato a regole e
+                regolamenti meno rigidi per il gioco d'azzardo - le province italiane sono state ora autorizzate ad
+                aprire vari tipi di "case da gioco" nelle loro regioni, con la conseguente apertura di un certo numero
+                di casinò terrestri in tutto il paese. Le lotterie statali sono state introdotte e sono ancora molto
+                popolari.</p>
+            <p><strong>Le leggi sul gioco d'azzardo online sono un po' vaghe in Italia:</strong> - "vaghe" perché alcune
+                province gestiscono i propri casinò online e piazzare le scommesse su questi siti è legale e lo è anche
+                l'acquisto di biglietti della lotteria su questi casinò online provinciali. Un casinò online non può
+                offrire alcun tipo di servizio ai cittadini italiani senza l'approvazione del governo. Tuttavia, c'è una
+                scappatoia - gli italiani possono giocare d'azzardo nei casinò online che hanno sede e operano al di
+                fuori della giurisdizione italiana, purché il gioco d'azzardo sia legale nel luogo in cui hanno sede
+                tali operatori.</p>
+            <p>Detto questo, nessun giocatore italiano è stato finora perseguito per il gioco d'azzardo online. Il
+                Codice Penale che detta le legalità e le regole per quanto riguarda i siti di gioco d'azzardo è
+                attualmente in fase di studio e di revisione per adattarsi alle tendenze attuali. Un buon segno per i
+                giocatori online italiani, dato che il governo potrebbe avere leggi e regole chiare per coprire non solo
+                i casinò online, ma anche i casinò tradizionali del paese, rendendo così legale il casinò online in
+                Italia.</p>
+            <h2>𝐈 𝐠𝐢𝐨𝐜𝐡𝐢 𝐩𝐢ù 𝐠𝐢𝐨𝐜𝐚𝐭𝐢 𝐢𝐧 𝐈𝐭𝐚𝐥𝐢𝐚</h2>
+            <p>I giochi online più giocati e popolari in Italia sono la roulette, il poker e le slot machine. A causa
+                delle leggi poco chiare riguardanti i casinò online, i cittadini italiani sono costretti a giocare su
+                siti che non hanno sede in Italia. Tuttavia, come nel resto del mondo, ciò che attrae più e più volte un
+                giocatore in un particolare casinò online sembra essere il bonus offerto, la facilità di pagamento e di
+                prelievo e un sistema di supporto 24×7.</p>
+            <p>Con l'innovazione dei casinò online mobili, i giocatori hanno la libertà di portare il loro casinò online
+                preferito ovunque vadano. Questi giochi sono progettati appositamente per i telefoni cellulari, rendendo
+                le vostre esperienze di casinò online grandiose come lo sono sempre state.</p>
+            <h2>Dove sono i jackpot più grandi?</h2>
+            <p>Il gioco d'azzardo, anche se è solo una forma di intrattenimento, il premio in denaro e soprattutto il
+                jackpot da vincere gioca un ruolo molto significativo nell'attrarre i giocatori. A tutti piace vincere e
+                vincere alla grande. Recentemente una signora ha vinto un enorme jackpot di oltre 3 milioni di dollari
+                su Gratorama. Gli operatori hanno fatto volare il vincitore dall'Italia a Sydney, Australia, per
+                ritirare il premio in denaro e godere dell'ospitalità di Sydney a loro spese.</p>
+            <img class="aligncenter wp-image-439 size-full" src="images/Woo-Casino.jpg" alt="">
+            <h2>𝐁𝐮𝐨𝐧𝐨 𝐚 𝐬𝐚𝐩𝐞𝐫𝐬𝐢</h2>
+            <p>Oggi innumerevoli casinò online si sono insediati nel cyberspazio italiano. I casinò online sono entrati
+                nelle case della gente e, a quanto pare, sono qui per restare. I casinò online hanno, infatti, aumentato
+                l'interesse della gente per i casinò di mattoni e malta. Gli italiani stanno spendendo miliardi di
+                dollari per il gioco d'azzardo online - è quasi come se tutti volessero assaggiare il proverbiale frutto
+                proibito.</p>
+            <h2>Metodi di pagamento e potenziali commissioni</h2>
+            <p>Un metodo di pagamento rapido e veloce è una cosa che tutti gli operatori si sforzano di offrire ai loro
+                giocatori. Con i casinò online i pagamenti devono ovviamente essere anche online e nell'attuale scenario
+                di frodi e phishing online, l'invio dei vostri dati finanziari e personali può essere un deterrente. Gli
+                operatori dei casinò online fanno del loro meglio per placare questi timori per rendere la vostra
+                esperienza di gioco online il più piacevole possibile.</p>
+            <p>Il giocatore italiano online può scegliere di pagare con carte di credito/debito, portafogli elettronici
+                o bonifici bancari diretti. Di seguito sono riportati alcuni dei pro e dei contro di tali metodi di
+                pagamento:</p>
+            <p><strong>Carta di credito:</strong> Il pagamento con carta di credito è il metodo più semplice e veloce
+                per chi ha una carta di credito. Tuttavia, è importante ricordare che mentre si effettua un pagamento
+                tramite carta di credito, si sta tracciando una linea di credito su un credito esistente e quindi
+                bisogna considerare anche il tasso d'interesse da pagare.</p>
+            <p><strong>Bonifici bancari: </strong> Con i bonifici bancari potete trasferire le spese del casinò
+                direttamente dal vostro conto bancario al conto del gestore. Qui i vostri dati finanziari personali sono
+                mantenuti il più possibile privati. È solo la prima volta che un bonifico bancario può essere
+                complicato, in quanto è necessario compilare dati come nome, numero di conto, ecc, ma per il
+                trasferimento successivo non ci sono problemi.</p>
+            <p>L'unico inconveniente di questo metodo di pagamento sono le spese che la vostra banca potrebbe
+                addebitarvi - queste spese sono piuttosto elevate rispetto alle carte di credito. Un altro fattore da
+                considerare è il tempo necessario alla banca per elaborare il pagamento. I bonifici bancari, a
+                differenza dei pagamenti con carta di credito, non vengono effettuati immediatamente e quindi se volete
+                iniziare a giocare non appena effettuate il pagamento, allora questo non è il metodo che dovreste
+                scegliere.</p>
+            <p><strong>Portafogli elettronici: </strong> negli ultimi due anni i portafogli elettronici hanno guadagnato
+                un'enorme popolarità grazie alla loro comodità e alla facilità con cui possono essere finanziati. Alcuni
+                degli e-Wallets più popolari a disposizione degli italiani sono Italy PayPal, o Neteller, Pay By Phone,
+                EcoCard, ecc. I pagamenti effettuati tramite e-Wallets sono istantanei, proprio come le carte di
+                credito, e quindi i giocatori preferiscono questi due metodi ai trasferimenti bancari. Tuttavia, è
+                importante ricordare che gli e-Wallets hanno quasi sempre un tetto massimo di depositi e che agiscono da
+                deterrente per i grandi giocatori.</p>
+            <p>Le modalità di pagamento devono essere sicure e sicure e questo è ciò che conta alla fine della giornata.
+                Devono proteggere e salvaguardare la vostra identità e i vostri dettagli finanziari e dovrebbero sempre
+                esserlo. È anche consigliabile leggere tutte le condizioni e le clausole relative alle opzioni di
+                pagamento e di prelievo prima di registrarsi in un casinò online. Se non capite nulla o avete dubbi su
+                una qualsiasi delle condizioni, vi preghiamo di farle approvare dal servizio clienti prima di effettuare
+                qualsiasi pagamento.</p>
+            <h2>𝐂𝐨𝐧𝐜𝐥𝐮𝐬𝐢𝐨𝐧𝐞</h2>
+            <p>Come discusso sopra, molti dei principali siti di casinò online accettano volentieri i giocatori
+                italiani. I nostri siti top-rated per l'Italia sono elencati nella tabella del casinò qui sopra, dove è
+                possibile utilizzare i nostri link per leggere le recensioni dettagliate di ogni sito del casinò o
+                iscriversi ad un conto per ottenere l'accesso immediato ad alcuni eccellenti bonus di benvenuto per
+                nuovi giocatori che includono depositi abbinati e giri gratis per farti iniziare.</p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-12 text-center">
+            <p class="copyr">©2021. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
